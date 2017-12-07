@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 20556588655246606}
   - component: {fileID: 124974636632529438}
   - component: {fileID: 81115744338986292}
+  - component: {fileID: 114949463227034822}
+  - component: {fileID: 114252590314786928}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -36,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1199167893008276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -92.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,13 +53,13 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.14705884, g: 0.14705884, b: 0.14705884, a: 0}
+  m_BackGroundColor: {r: 0.2647059, g: 0.2647059, b: 0.2647059, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.15
-    y: 0.1
-    width: 0.7
-    height: 0.8
+    x: 0.225
+    y: 0.175
+    width: 0.55
+    height: 0.65
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -84,6 +86,34 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1199167893008276}
   m_Enabled: 1
+--- !u!114 &114252590314786928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1199167893008276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618e00afb4ab60c41a8cead17de1e2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: b9bd43c786b67194e81d32c97c739fcb, type: 3}
+  displacementMap: {fileID: 0}
+  intensity: 0.3
+  flipIntensity: 0.6
+  colorIntensity: 0.2
+--- !u!114 &114949463227034822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1199167893008276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: e0cd8793923361742ae6ef0c4d03111e, type: 2}
 --- !u!124 &124974636632529438
 Behaviour:
   m_ObjectHideFlags: 1

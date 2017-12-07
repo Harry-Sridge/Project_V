@@ -90,7 +90,7 @@ namespace CinemaSuite
 #if UNITY_5 && !UNITY_5_0
             base.titleContent = new GUIContent(TITLE);
 #else
-            base.title = TITLE;
+            title = TITLE;
 #endif
             
             this.minSize = new Vector2(600, 700);

@@ -26,13 +26,13 @@ public class GlitchEffect : ImageEffectBase {
 
     [Header("Glitch Intensity")]
 
-    [Range(0, 1)]
+    [Range(0, 10)]
     public float intensity;
     
-    [Range(0, 1)]
+    [Range(0, 10)]
     public float flipIntensity;
 
-    [Range(0, 1)]
+    [Range(0, 10)]
     public float colorIntensity;
 	
 	// Called by camera to apply image effect
